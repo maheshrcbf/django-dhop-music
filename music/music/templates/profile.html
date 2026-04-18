@@ -7,17 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Artist Profile</title>
   <link rel="stylesheet" type="text/css" href="{% static 'profile-style.css' %}" />
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.4/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-
-    .artist-header {
-      background-image: url('https://cdn.punchng.com/wp-content/uploads/2023/05/20120536/Rema.jpeg');
-      background-size: cover;
-      background-position: center;
-      height: 60vh;
-    }
-
-  </style>
 </head>
 <body class="bg-black text-white flex">
 
@@ -25,7 +14,7 @@
   <div class="sidebar">
     <!-- Dhop Music Logo -->
     <div class="logo-container">
-       <img src="images/dhop_logo.png"
+       <img src="{% static 'dhop_logo.png' %}"
      alt="Dhop Music Logo"
      style="width: 100%; height: auto; padding: 20px; box-sizing: border-box;">
     </div>
@@ -66,8 +55,8 @@
   <div class="relative">
 
     <!-- ✅ DHOP MUSIC LOGO) -->
-    <img src="{% static 'images/dhop_logo.png' %}" 
-         alt="Dhop Music Logo" 
+    <img src="{% static 'dhop_logo.png' %}" 
+         alt="Dhop Music" 
          style="height: 600px; object-fit: cover; width: 100%;">
 
     <div class="absolute bottom-0 p-5 w-full" style="background: rgba(0, 0, 0, 0.5);">
